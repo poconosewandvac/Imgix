@@ -1,0 +1,46 @@
+{
+    "name": "Imgix",
+    "lowCaseName": "imgix",
+    "description": "Generate Imgix URLs like pThumb.",
+    "author": "Tony Klapatch",
+    "version": "1.0.0-pl",
+    "package": {
+        "elements": {
+            "snippets": [{
+                "name": "imgix",
+                "properties": [
+                    {
+                        "name": "input",
+                        "description": "imgix.snippet.input_desc",
+                        "value": ""
+                    },
+                    {
+                        "name": "options",
+                        "description": "imgix.snippet.options_desc",
+                        "value": ""
+                    }
+                ]
+            }]
+        },
+        "systemSettings": [
+            {
+                "key": "urls",
+                "value": "example.imgix.net",
+                "type": "textfield",
+                "area": "settings"
+            },
+            {
+                "key": "use_https",
+                "value": 1,
+                "type": "combo-boolean",
+                "area": "settings"
+            },
+            {
+                "key": "use_cycle_sharding",
+                "value": 0,
+                "type": "combo-boolean",
+                "area": "settings"
+            }
+        ]
+    }
+}
