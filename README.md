@@ -16,7 +16,7 @@ Assuming img is a placeholder with an absolute or relative image URL.
 
 ### Snippet
 
-```[[imgix? &input=`https://example.imgix.net/some/path/to/image.png` &options=`h=100&h=100`]]```
+```[[imgix? &input=`https://example.imgix.net/some/path/to/image.png` &options=`w=100&h=100`]]```
 
 ## Development
 
