@@ -18,6 +18,10 @@ Assuming img is a placeholder with an absolute or relative image URL.
 
 ```[[imgix? &input=`https://example.imgix.net/some/path/to/image.png` &options=`w=100&h=100`]]```
 
+## Options
+
+All options supported by Imgix are supported: https://docs.imgix.com/apis/url
+
 ## Development
 
 Clone the repository and run `composer install` in `core/components/imgix` to download the dependencies.
