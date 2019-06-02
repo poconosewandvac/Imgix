@@ -18,6 +18,8 @@ Assuming img is a placeholder with an absolute or relative image URL.
 
 ```[[imgix? &input=`https://example.imgix.net/some/path/to/image.png` &options=`w=100&h=100`]]```
 
+Note: Your URL must not be URL encoded. Imgix will encode the URL automatically. Passing a URL encoded URL will result in the URL being double encoded.
+
 ## Options
 
 All options supported by Imgix are supported: https://docs.imgix.com/apis/url
