@@ -8,6 +8,8 @@ Configure the `imgix.urls` setting to point to your imgix URL. Multiple URLs are
 
 ## Examples
 
+Note: Your URL must not be URL encoded. Imgix will encode the URL automatically. Passing a URL encoded URL will result in the URL being double encoded.
+
 ### Output Filter
 
 Assuming img is a placeholder with an absolute or relative image URL.
@@ -18,7 +20,14 @@ Assuming img is a placeholder with an absolute or relative image URL.
 
 ```[[imgix? &input=`https://example.imgix.net/some/path/to/image.png` &options=`w=100&h=100`]]```
 
-Note: Your URL must not be URL encoded. Imgix will encode the URL automatically. Passing a URL encoded URL will result in the URL being double encoded.
+### Within a Snippet
+
+```PHP
+$imgixUrl = $modx->runSnippet('imgix', [
+    'input' => 'https://example.imgix.net/some/path/to/image.png',
+    'options' => 'w=100&h=100',
+]);
+```
 
 ## Options
 
